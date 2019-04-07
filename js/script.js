@@ -64,18 +64,18 @@ function begin() {
 
 			fadeContent(false);
 
-			setTimeout(function() {
-				document.getElementById("download").addEventListener("click", function() {
-					var element = document.createElement("a");
-					element.setAttribute("href", window.location.href + "/file/sample.pdf");
-					element.setAttribute("download", "TaylorHerald_Resume.pdf");
-					element.style.display = "none";
-					document.body.append(element);
+			// setTimeout(function() {
+			// 	document.getElementById("download").addEventListener("click", function() {
+			// 		var element = document.createElement("a");
+			// 		element.setAttribute("href", window.location.href + "/file/sample.pdf");
+			// 		element.setAttribute("download", "TaylorHerald_Resume.pdf");
+			// 		element.style.display = "none";
+			// 		document.body.append(element);
 
-					element.click();
-					document.body.removeChild(element);
-				});
-			}, 500);
+			// 		element.click();
+			// 		document.body.removeChild(element);
+			// 	});
+			// }, 500);
 		}
 	}
 	if (resumeLinks != null) {
